@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mes Patrio - Mitos</title>
+    <style>
+        :root {
+            --verde-patrio: #006847;
+            --rojo-patrio: #ce1126;
+            --blanco: #ffffff;
+            --gris-claro: #f8f9fa;
+            --gris-menu: #e9ecef;
+            --texto-oscuro: #2b2d42;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', Arial, sans-serif; border-radius: 0 !important; }
+        body { background-color: var(--gris-claro); color: var(--texto-oscuro); display: flex; flex-direction: column; min-height: 100vh; }
+
+        header { background-color: var(--verde-patrio); color: var(--blanco); padding: 35px 20px; text-align: center; border-bottom: 5px solid var(--rojo-patrio); }
+        header h1 { font-size: 42px; font-weight: 700; text-transform: uppercase; }
+
+        .cuerpo-layout { display: flex; flex: 1; width: 100%; }
+
+        nav { width: 25%; background-color: var(--gris-menu); padding: 30px 20px; border-right: 3px solid var(--verde-patrio); }
+        nav ul { list-style: none; display: flex; flex-direction: column; gap: 15px; }
+        nav a { text-decoration: none; color: var(--verde-patrio); font-size: 18px; font-weight: 600; display: block; padding: 8px; }
+        nav a:hover, nav a.active { color: var(--rojo-patrio); background-color: var(--blanco); border-left: 4px solid var(--rojo-patrio); }
+
+        main { width: 75%; background-color: var(--blanco); padding: 40px; }
+        .info-panel h2 { font-size: 32px; color: var(--verde-patrio); margin-bottom: 25px; }
+
+        .mito-box { background: var(--gris-claro); padding: 20px; margin-bottom: 20px; border-left: 5px solid var(--rojo-patrio); border-bottom: 1px solid #e2e8f0; }
+        .mito-box h3 { font-size: 18px; color: var(--rojo-patrio); margin-bottom: 8px; }
+        .mito-box p { font-size: 15px; line-height: 1.6; color: #4f5d75; text-align: justify; }
+
+        footer { background-color: var(--rojo-patrio); color: var(--blanco); padding: 25px 20px; border-top: 5px solid var(--verde-patrio); width: 100%; }
+        .datos-alumno { display: flex; flex-direction: column; gap: 5px; width: 100%; font-size: 14px; }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Septiembre</h1>
+    </header>
+
+    <div class="cuerpo-layout">
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="fechas.html">Fechas importantes</a></li>
+                <li><a href="personajes.html">Personajes Ilustres</a></li>
+                <li><a href="datos.html">Datos </a></li>
+                <li><a href="mitos.html" class="active">Mitos </a></li>
+            </ul>
+        </nav>
+
+        <main>
+            <div class="info-panel">
+                <h2>Mitos Históricos Desmentidos</h2>
+
+                <div class="mito-box">
+                    <h3>El mito de Porfirio Díaz y el cambio de fecha del Grito</h3>
+                    <p>Existe el mito popular de que Porfirio Díaz cambió la celebración del Grito al 15 de septiembre para hacerla coincidir con su cumpleaños. Sin embargo, los registros históricos demuestran que desde la década de 1840 (antes de su gobierno) ya se acostumbraba celebrar una verbena popular la noche del 15 que culminaba con el festejo al día siguiente.</p>
+                </div>
+
+                <div class="mito-box">
+                    <h3>El mito del Pipila y la losa de piedra</h3>
+                    <p>Aunque la toma de la Alhóndiga de Granaditas fue real, los historiadores coinciden en que la figura de Juan José de los Reyes Martínez "El Pípila" quemando la puerta con una enorme losa en la espalda funciona más como una representación simbólica del esfuerzo colectivo del pueblo minero e indígena que como un hecho individual documentado.</p>
+                </div>
+
+                <div class="mito-box">
+                    <h3>El mito de los Niños Héroes en Chapultepec</h3>
+                    <p>La idea de que eran niños pequeños es un mito derivado del término cariñoso "niños". En realidad, eran cadetes jóvenes de entre 13 y 20 años que recibieron adiestramiento militar y decidieron defender valientemente el Castillo de Chapultepec ante la invasión del ejército estadounidense en 1847.</p>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <footer>
+        <div class="datos-alumno">
+            <span><strong>Alumno:</strong> Burciaga Burciaga Isaac Felipe</span>
+            <span><strong>No. Control:</strong> 24308051280514 | <strong>Grado y Grupo:</strong> 5ºI</span>
+            <span><strong>Especialidad:</strong> Programación</span>
+        </div>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mes Patrio - Datos </title>
+    <style>
+        :root {
+            --verde-patrio: #006847;
+            --rojo-patrio: #ce1126;
+            --blanco: #ffffff;
+            --gris-claro: #f8f9fa;
+            --gris-menu: #e9ecef;
+            --texto-oscuro: #2b2d42;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', Arial, sans-serif; border-radius: 0 !important; }
+        body { background-color: var(--gris-claro); color: var(--texto-oscuro); display: flex; flex-direction: column; min-height: 100vh; }
+
+        header { background-color: var(--verde-patrio); color: var(--blanco); padding: 35px 20px; text-align: center; border-bottom: 5px solid var(--rojo-patrio); }
+        header h1 { font-size: 42px; font-weight: 700; text-transform: uppercase; }
+
+        .cuerpo-layout { display: flex; flex: 1; width: 100%; }
+
+        nav { width: 25%; background-color: var(--gris-menu); padding: 30px 20px; border-right: 3px solid var(--verde-patrio); }
+        nav ul { list-style: none; display: flex; flex-direction: column; gap: 15px; }
+        nav a { text-decoration: none; color: var(--verde-patrio); font-size: 18px; font-weight: 600; display: block; padding: 8px; }
+        nav a:hover, nav a.active { color: var(--rojo-patrio); background-color: var(--blanco); border-left: 4px solid var(--rojo-patrio); }
+
+        main { width: 75%; background-color: var(--blanco); padding: 40px; }
+        .info-panel h2 { font-size: 32px; color: var(--verde-patrio); margin-bottom: 25px; }
+
+        .dato-box { background: var(--gris-claro); padding: 20px; margin-bottom: 20px; border-left: 5px solid var(--verde-patrio); border-bottom: 1px solid #e2e8f0; }
+        .dato-box h3 { font-size: 18px; color: var(--rojo-patrio); margin-bottom: 8px; }
+        .dato-box p { font-size: 15px; line-height: 1.6; color: #4f5d75; text-align: justify; }
+
+        footer { background-color: var(--rojo-patrio); color: var(--blanco); padding: 25px 20px; border-top: 5px solid var(--verde-patrio); width: 100%; }
+        .datos-alumno { display: flex; flex-direction: column; gap: 5px; width: 100%; font-size: 14px; }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Septiembre</h1>
+    </header>
+
+    <div class="cuerpo-layout">
+        <nav>
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="fechas.html">Fechas importantes</a></li>
+                <li><a href="personajes.html">Personajes Ilustres</a></li>
+                <li><a href="datos.html" class="active">Datos</a></li>
+                <li><a href="mitos.html">Mitos</a></li>
+            </ul>
+        </nav>
+
+        <main>
+            <div class="info-panel">
+                <h2>Datos Curiosos del Mes Patrio</h2>
+
+                <div class="dato-box">
+                    <h3>Origen de los Chiles en Nogada</h3>
+                    <p>Fueron creados en agosto de 1821 por las monjas agustinas del convento de Santa Mónica en Puebla para celebrar la firma de los Tratados de Córdoba y homenajear a Agustín de Iturbide, utilizando ingredientes de temporada que representaban los colores de la bandera del Ejército Trigarante.</p>
+                </div>
+
+                <div class="dato-box">
+                    <h3>La Campana de Dolores no se tocó exactamente a medianoche</h3>
+                    <p>Aunque hoy en día la ceremonia del Grito se realiza a las 11:00 PM del 15 de septiembre por costumbre institucional, históricamente el cura Miguel Hidalgo hizo sonar la campana la madrugada del 16 de septiembre alrededor de las 5:00 AM para convocar a misa y llamar al pueblo a levantarse en armas.</p>
+                </div>
+
+                <div class="dato-box">
+                    <h3>El estandarte de la Virgen de Guadalupe</h3>
+                    <p>Al pasar por el santuario de Atotonilco en Guanajuato, Miguel Hidalgo tomó un lienzo de la Virgen de Guadalupe y lo colocó en un asta como primer símbolo de unión e identidad para las tropas insurgentes.</p>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <footer>
+        <div class="datos-alumno">
+            <span><strong>Alumno:</strong> Burciaga Burciaga Isaac Felipe</span>
+            <span><strong>No. Control:</strong> 24308051280514 | <strong>Grado y Grupo:</strong> 5ºI</span>
+            <span><strong>Especialidad:</strong> Programación</span>
+        </div>
+    </footer>
+
+</body>
+</html>
