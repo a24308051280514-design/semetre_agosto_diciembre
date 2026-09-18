@@ -1,10 +1,11 @@
-<!DOCTYPE html>
+<!DOCTYPE html> 
 <html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mes Patrio - Inicio</title>
-    <style>
+    <!--define los colores que se van a usar -->
+    <style>  
         :root {
             --verde-patrio: #006847;
             --rojo-patrio: #ce1126;
@@ -13,10 +14,10 @@
             --gris-menu: #e9ecef;
             --texto-oscuro: #2b2d42;
         }
-
+        /* usará un margen, le da un tamaño a la caja, la fuente */
         * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', Arial, sans-serif; border-radius: 0 !important; }
         body { background-color: var(--gris-claro); color: var(--texto-oscuro); display: flex; flex-direction: column; min-height: 100vh; }
-
+       /* encabezado de color verde, las letras blancas, el texto alineado y el borde inferior será rojo*/
         header { 
             background-color: var(--verde-patrio); 
             color: var(--blanco); 
@@ -24,37 +25,36 @@
             text-align: center;
             border-bottom: 5px solid var(--rojo-patrio);
         }
-
+       /* titulo del encabezado h1 con el espacio entre cada letra*/
         header h1 { font-size: 42px; font-weight: 700; letter-spacing: 1px; text-transform: uppercase; }
 
         .cuerpo-layout { display: flex; flex: 1; width: 100%; }
-
+        /* flex para alinear las cosas sin que se vea feo*/
         nav { 
             width: 25%; 
             background-color: var(--gris-menu); 
             padding: 30px 20px; 
             border-right: 3px solid var(--verde-patrio);
         }
-
+       /* el color de la barra de navegación, la fuente y tamaño, espaciado, etc.*/
         nav ul { list-style: none; display: flex; flex-direction: column; gap: 15px; }
         nav a { text-decoration: none; color: var(--verde-patrio); font-size: 18px; font-weight: 600; display: block; padding: 8px; }
         nav a:hover, nav a.active { color: var(--rojo-patrio); background-color: var(--blanco); border-left: 4px solid var(--rojo-patrio); }
-
+       /* lo mismo de arriba pero con lo del body*/
         main { width: 75%; background-color: var(--blanco); padding: 40px; }
         .info-panel h2 { font-size: 32px; color: var(--verde-patrio); margin-bottom: 20px; }
         .info-panel p { font-size: 16px; margin-bottom: 20px; line-height: 1.7; text-align: justify; color: #4f5d75; }
-
+        /* lo mismo de arriba ora vez pero para el footer*/
         footer { background-color: var(--rojo-patrio); color: var(--blanco); padding: 25px 20px; border-top: 5px solid var(--verde-patrio); width: 100%; }
         .datos-alumno { display: flex; flex-direction: column; gap: 5px; width: 100%; font-size: 14px; }
     </style>
 </head>
 <body>
-
-    <header>
+    <header> <!--el titulo del encabezado -->
         <h1>Septiembre</h1>
     </header>
 
-    <div class="cuerpo-layout">
+    <div class="cuerpo-layout"> <!--define las cosas de la barra -->
         <nav>
     <ul>
         <li><a href="index.html">Inicio</a></li>
@@ -65,7 +65,7 @@
     </ul>
 </nav>
 
-        <main>
+        <main>  <!--define lo que  tendrá el cuerpo -->
             <div class="info-panel">
                 <h2>Inicio</h2>
                 <p>Septiembre es conocido como el Mes Patrio en México, ya que durante este mes se conmemoran acontecimientos importantes relacionados con la historia y la Independencia del país. Es una época en la que los mexicanos recuerdan a los personajes que participaron en la lucha por la libertad y celebran las tradiciones, símbolos y valores que forman parte de nuestra identidad nacional. El Mes Patrio es crucial para México porque conmemora el proceso histórico que le otorgó libertad y soberanía, marcando el inicio de la Independencia el 16 de septiembre de 1810 y su consumación el 27 de septiembre de 1821 tras liberarse del dominio español.</p>
@@ -75,7 +75,7 @@
         </main>
     </div>
 
-    <footer>
+    <footer> <!--mis datos en el footer -->
         <div class="datos-alumno">
             <span><strong>Alumno:</strong> Burciaga Burciaga Isaac Felipe</span>
             <span><strong>No. Control:</strong> 24308051280514 | <strong>Grado y Grupo:</strong> 5ºI</span>
